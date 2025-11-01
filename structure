@@ -1,0 +1,14 @@
+JDBC_Assignment_ByteXL/
+│
+├── PartA_JDBC_Fetch/
+│   └── FetchEmployeeData.java
+│
+├── PartB_ProductCRUD/
+│   └── ProductCRUD.java
+│
+└── PartC_StudentMVC/
+    ├── Student.java
+    ├── StudentDAO.java
+    └── StudentApp.java
+
+README.md
