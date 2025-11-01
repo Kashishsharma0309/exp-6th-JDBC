@@ -1,0 +1,18 @@
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BankService {
+    @Autowired
+    private AccountDAO dao;
+
+    @Transactional
+    public void transfer(Account from, Account to, double amount) {
+        from.setBalance(from.getBalance() - amount);
+        to.setBalance(to.getBalance() + amount);
+
+        dao.update(from);
+        dao.update(to);
+    }
+}
