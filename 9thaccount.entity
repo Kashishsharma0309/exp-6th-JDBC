@@ -1,0 +1,9 @@
+@Entity
+public class Account {
+    @Id
+    private int accNo;
+    private String name;
+    private double balance;
+
+    // Getters & Setters
+}
