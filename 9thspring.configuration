@@ -1,0 +1,5 @@
+@Configuration
+@EnableTransactionManagement
+public class AppConfig {
+    // DataSource, SessionFactory, and TransactionManager beans
+}
